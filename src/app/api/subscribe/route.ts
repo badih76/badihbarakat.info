@@ -89,7 +89,9 @@ export async function POST(request: NextRequest) {
 
         post_exp_query = "INSERT INTO subscriptions (email) VALUES (?)";
                 
-        values = [email]
+        values = [email];
+
+        console.log("Values: ", values);
 
         // exec the query and retrieve the results
         const [ results ] = await connection.execute(post_exp_query, values);
