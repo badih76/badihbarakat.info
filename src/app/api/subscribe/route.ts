@@ -85,13 +85,13 @@ export async function POST(request: NextRequest) {
         // create a query to fetch all expenses
         let post_exp_query = "";
         let values: any[] = [];
-        const {email} = payload;
+        const {e} = payload;
         console.log("Payload: ", payload);
 
 
         post_exp_query = "INSERT INTO subscriptions (email) VALUES (?)";
                 
-        values = [email];
+        values = [e];
 
         console.log("Values: ", values);
 
