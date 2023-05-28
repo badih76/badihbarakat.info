@@ -86,6 +86,8 @@ export async function POST(request: NextRequest) {
         let post_exp_query = "";
         let values: any[] = [];
         const {email} = payload;
+        console.log("Payload: ", payload);
+
 
         post_exp_query = "INSERT INTO subscriptions (email) VALUES (?)";
                 
