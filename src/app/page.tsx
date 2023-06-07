@@ -3,13 +3,10 @@ import { headers } from 'next/headers';
 // import Image from 'next/image'
 // import { Inter } from 'next/font/google'
 import MyPic from '@/components/mypic';
-// import bg1 from '@/../public/background1.jpg';
-// import bg2 from '@/../public/background2.jpg';
-// import bg3 from '@/../public/background3.jpg';
+
 
 import Styles from './page.module.css';
 import StarsStyles from '@/css/stars.module.css'
-// import './globals.css';
 
 import store from '@/redux/store';
 import { setStatistics } from '@/redux/store/actions';
@@ -91,7 +88,7 @@ const Home = async () => {
             </div>
         {/* </div>
       </div> */}
-      <div className='flexGridResponsive'>
+      <div className='flexGridResponsive' style={{paddingTop: "2rem", paddingBottom: "2rem"}}>
         <MyPic />      
         <div className='helloNqouteResponsive'>
           <div className='myPicContainerResponsive'>
