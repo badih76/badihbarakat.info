@@ -8,18 +8,20 @@ import MyPic from '@/components/mypic';
 // import bg3 from '@/../public/background3.jpg';
 
 import Styles from './page.module.css';
+import StarsStyles from '@/css/stars.module.css'
 // import './globals.css';
 
 import store from '@/redux/store';
 import { setStatistics } from '@/redux/store/actions';
 
-import QuoteBox from '@/components/quotebox';
+import QuoteBox, { QuoteBoxPlain } from '@/components/quotebox';
 import SubscribeForm from '@/components/subsribeform/inbox';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LikeButton from '@/components/likeButton';
 import VisitCounter from '@/components/visitCounter';
 import { IPageStats } from '@/redux/store/reducer';
 import { GetHostURL } from '@/sharedCode/common'
+import { GetStaticProps } from 'next';
 
 export const metadata = {
   title: 'Welcome to BadihBarakat.info',
@@ -79,6 +81,16 @@ const Home = async () => {
   
   return (
     <>
+      {/* <div className={StarsStyles.mainContainer}>
+        <div className="sub-container"> */}
+            <div className={StarsStyles.sky}>
+                <div className={StarsStyles.stars}></div>
+                <div className={StarsStyles.stars2}></div>
+                <div className={StarsStyles.stars3}></div>
+                <div className={StarsStyles.comet}></div>
+            </div>
+        {/* </div>
+      </div> */}
       <div className='flexGridResponsive'>
         <MyPic />      
         <div className='helloNqouteResponsive'>
@@ -87,7 +99,7 @@ const Home = async () => {
             <h1>Hello World! 😁</h1>
           </div>
           <div>
-            <QuoteBox quote="An expert is a man who knows just that much more about his subject than his associates. Most of us are nearer the top than we think. We fail to realize how easy it is, how necessary it is to learn that fraction more." 
+            <QuoteBoxPlain quote="An expert is a man who knows just that much more about his subject than his associates. Most of us are nearer the top than we think. We fail to realize how easy it is, how necessary it is to learn that fraction more." 
               by="William N. Hutchins" />
           </div>
         </div>

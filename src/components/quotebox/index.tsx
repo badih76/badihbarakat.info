@@ -29,3 +29,23 @@ const QuoteBox = ({ quote, width= "100%", height= "auto", by }: IProps) => {
 
 
 export default QuoteBox;
+
+export const QuoteBoxPlain = ({ quote, width= "100%", height= "auto", by }: IProps) => {
+    return (
+        <div className={Styles.quoteContainerPlain}> 
+            <div style={{padding: "2rem", color: "black"}}>
+                {/* <div className={Styles.openingQuote}>
+                    <span style={{fontSize: "7rem", lineHeight: "5rem"}}>❝</span>
+                </div> */}
+                <span 
+                    className={Styles.quoteTextPlain}>
+                    ❝{quote}❞
+                </span>
+                <div className={Styles.quoteByPlain}>
+                    {by}
+                </div>
+                
+            </div>
+        </div>
+    )
+}
