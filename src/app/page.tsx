@@ -88,7 +88,7 @@ const Home = async () => {
             </div>
         {/* </div>
       </div> */}
-      <div className='flexGridResponsive' style={{paddingTop: "2rem", paddingBottom: "2rem"}}>
+      <div className='flexGridResponsive' >
         <MyPic />      
         <div className='helloNqouteResponsive'>
           <div className='myPicContainerResponsive'>
