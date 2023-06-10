@@ -89,7 +89,7 @@ export const QuoteBoxPlain = ({ quote=null, width= "100%", height= "auto", by=nu
             {
                 quotes.map((q:IQuote, i: number) => {
                     return (
-                    <div className={Styles.slide}>
+                    <div className={Styles.slide} key={i}>
                         <div className={Styles.slidingQuote}>
                             {/* <div className={Styles.openingQuote}>
                                 <span style={{fontSize: "7rem", lineHeight: "5rem"}}>❝</span>
