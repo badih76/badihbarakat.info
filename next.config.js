@@ -6,12 +6,17 @@ const nextConfig = {
     serverComponentsExternalPackages: ["mysql2"]
   },
   env: {
-    host: 'eu-cdbr-west-03.cleardb.net', //'58.84.143.251', 
+    host: 'lt80glfe2gj8p5n2.chr7pe7iynqr.eu-west-1.rds.amazonaws.com', //'58.84.143.251', 
     port: '3306', 
-    user: 'b497fc3a1d6402',
-    password: '43eda683', 
-    database: 'heroku_861269146ee1eec', 
-    DEV_HOST_URL: 'http://192.168.1.12:3000',             // 'http://localhost:3000',
+    user: 'ku85xect3m0k5u0y',
+    password: 't90wk9oum7v6tcg2', 
+    database: 'xi8lbnhzcfrnp573', 
+    host_dev: 'localhost', // '192.168.1.12', //'58.84.143.251', 
+    port_dev: '3306', 
+    user_dev: 'root',
+    password_dev: 'Malmak-101', 
+    database_dev: 'badihbarakat',
+    DEV_HOST_URL:  'http://localhost:3000', //'http://192.168.1.12:3000',   
     PROD_HOST_URL: 'https://app-badihbarakat-info.herokuapp.com'
   }
 }

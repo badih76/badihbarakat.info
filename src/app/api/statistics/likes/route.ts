@@ -1,15 +1,18 @@
 import mysql, { OkPacket } from 'mysql2/promise';
 import { NextResponse, NextRequest } from "next/server";
 import { IAPIResponse } from '@/interfaces/api.types';
+import { GetDBSettings, IDBSettings } from '@/sharedCode/common';
 
 
-let connectionParams = {
-    host: process.env.host,
-    port: process.env.port ? parseInt(process.env.port) : 3306,
-    user: process.env.user,
-    password: process.env.password,
-    database: process.env.database
-  } 
+// let connectionParams = {
+//     host: process.env.host,
+//     port: process.env.port ? parseInt(process.env.port) : 3306,
+//     user: process.env.user,
+//     password: process.env.password,
+//     database: process.env.database
+//   } 
+
+let connectionParams = GetDBSettings();
 
 let response: IAPIResponse = {
     returnedStatus: 0,
