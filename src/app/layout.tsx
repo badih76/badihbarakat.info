@@ -39,6 +39,7 @@ export default function RootLayout({
 
         <link rel='stylesheet' href='./globals.css' />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="monetag" content="fb2900369b27d6b9381c7ea2d615b7df"></meta>
         <link rel="icon" href="/favicon.ico" sizes="any" />
 
       </head>
