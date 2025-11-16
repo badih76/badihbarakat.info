@@ -25,7 +25,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script src="https://fpyf8.com/88/tag.min.js" data-zone="185676" async data-cfasync="false"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com"  />
         
@@ -40,7 +39,6 @@ export default function RootLayout({
 
         <link rel='stylesheet' href='./globals.css' />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="monetag" content="fb2900369b27d6b9381c7ea2d615b7df"></meta>
         <link rel="icon" href="/favicon.ico" sizes="any" />
 
       </head>
